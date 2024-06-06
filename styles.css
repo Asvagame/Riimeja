@@ -1,0 +1,183 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+}
+
+.game-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header h1 {
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.header .main-image {
+    width: 150px;
+    height: auto;
+    cursor: pointer;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.option-image {
+    width: 150px;
+    height: auto;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 8px solid transparent;
+}
+
+.option-image:hover {
+    transform: scale(1.1);
+}
+
+.option-image.active {
+    border: 8px solid black;
+}
+
+.option-image.correct {
+    border: 8px solid green;
+}
+
+.option-image.incorrect {
+    border: 8px solid red;
+}
+
+#feedback {
+    margin-top: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+#result-container {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 800px;
+    margin-top: 20px;
+}
+
+#result-text {
+    margin-bottom: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#result-container button {
+    margin-top: 20px;
+}
+
+#next-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+@media (max-width: 767px) {
+    .main-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .option-image {
+        max-width: 30%;
+        height: auto;
+    }
+
+    .next-button {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+/* Tableteille */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .main-image {
+        max-width: 80%;
+        height: auto;
+    }
+
+    .option-image {
+        max-width: 20%;
+        height: auto;
+    }
+
+    .next-button {
+        width: 40px;
+        height: 40px;
+    }
+}
+
+/* Pöytäkoneille */
+@media (min-width: 1024px) {
+    .main-image {
+        max-width: 500px;
+        height: auto;
+    }
+
+    .option-image {
+        max-width: 150px;
+        height: auto;
+    }
+
+    .next-button {
+        width: 50px;
+        height: 50px;
+    }
+}

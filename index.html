@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riimipari Peli</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="header">
+            <h1>ETSI RIIMIPARI SANALLE:</h1>
+            <img id="paakuva" src="paakuva1.PNG" alt="Pääkuva" class="main-image">
+        </div>
+        <div class="options">
+            <img id="kuva1" src="kuva1_1.PNG" alt="Vaihtoehto 1" class="option-image">
+            <img id="kuva2" src="kuva2_1.PNG" alt="Vaihtoehto 2" class="option-image">
+            <img id="kuva3" src="kuva3_1.PNG" alt="Vaihtoehto 3" class="option-image">
+        </div>
+        <button id="check-button" onclick="checkAnswer()">Tarkista</button>
+        <img id="next-button" src="arrow.png" alt="Seuraava taso" class="next-button" onclick="nextLevel()">
+    </div>
+    <div id="result-container">
+        <div id="result-text"></div>
+        <button onclick="playAgain()">Pelaa uudelleen</button>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
