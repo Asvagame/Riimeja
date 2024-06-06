@@ -131,13 +131,14 @@ button:hover {
 }
 @media (max-width: 767px) {
     .main-image {
-        max-width: 100%;
+        max-width: 80%;
         height: auto;
     }
 
     .option-image {
         max-width: 30%;
         height: auto;
+        margin: 0 10px;
     }
 
     .next-button {
