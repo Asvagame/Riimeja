@@ -1,0 +1,134 @@
+body {
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+#game {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#question-container, #start-screen {
+    position: relative;
+    gap: 20px;
+}
+
+.main-image {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+    cursor: pointer;
+}
+.main-image, .option {
+    border-radius: 10px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0;
+}
+
+.option {
+    width: 30%;
+    border: 3px solid rgb(242, 242, 243);
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.option:hover {
+    transform: scale(1.1);
+}
+
+.option.selected {
+    border-color: black;
+}
+
+.option.correct {
+    border-color: green;
+}
+
+.option.incorrect {
+    border-color: red;
+}
+
+#check-button, #start-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#next-arrow {
+    position: absolute;
+    bottom: -5px;
+    right: 20px;
+    width: 55px;
+    height: auto;
+    cursor: pointer;
+    display: none;
+}
+
+#result {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+#star-area {
+    height: 40px; /* Säädä tämä sopivaksi tähtien koon mukaan */
+    margin: 10 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#stars-container, #final-stars-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.star-icon {
+    width: 30px; /* tai muu sopiva koko */
+    height: auto;
+    margin: 10 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+h1, h2 {
+    margin: 10px 0;
+}
+
+button[onclick="restartGame()"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: transparent;
+    color: black;
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
